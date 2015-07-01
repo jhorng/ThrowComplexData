@@ -1,0 +1,29 @@
+---
+:source:
+  :path: test
+  :file: test_Main.c
+:successes:
+- :test: test_doThings
+  :line: 14
+  :message: ''
+- :test: test_specialAdd_given_minus_5_and_11_should_return_6
+  :line: 30
+  :message: ''
+- :test: test_specialAdd_given_7_and_18_should_throw_ERR_NUMBER_NOT_NEGATIVE
+  :line: 35
+  :message: ''
+:failures:
+- :test: test_specialAdd_given_minus_5_and_56_should_throw_ERR_NUMBER_TOO_LARGE
+  :line: 58
+  :message: Expected 'Hey! Positive value is more than 50.' Was 'Hey! It is not a
+    negative number.'
+:ignores: []
+:counts:
+  :total: 4
+  :passed: 3
+  :failed: 1
+  :ignored: 0
+:stdout:
+- 'Error: Hey! Something is really wrong here.'
+- 'Error: Hey! It is not a negative number.'
+- ''
